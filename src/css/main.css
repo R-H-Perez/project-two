@@ -1,7 +1,385 @@
-/* Decent Defaults */
+  /* Adobe XD Exports */
+:root {
 
-img,
-video {
+  /* Colors: */
+  --white-ffffff-: #FFFFFF;
+  --yellow-fbb03b-: #FBB03B;
+  --grey-cdcdcd-: #CDCDCD;
+  --black-000000-: #000000;
+  
+  /* Font/text values */
+  --unnamed-font-family-franklin-gothic: Franklin Gothic;
+  --unnamed-font-style-italic: italic;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-size-25: 25px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-33: 33px;
+  --unnamed-font-size-34: 34px;
+  --unnamed-font-size-50: 50px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-45: 45px;
+  --unnamed-line-spacing-51: 51px;
+  --unnamed-line-spacing-75: 75px;
+  --unnamed-line-spacing-49-5: 49.5px;
+  --unnamed-line-spacing-37-5: 37.5px;
+}
+  
+* {
+    font-family: var(--unnamed-font-family-franklin-gothic);
+}
+
+/* Setting to make the entire page black. */
+body {
+  margin: 0;
+  background-color: var(--black-000000-);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0.16rem 0 0 var(--white-ffffff-);
+  padding: 1rem;
+  text-decoration: none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
   width: 100%;
-  height: auto;
+  color: var(--yellow-fbb03b-);
+  background-color: var(--black-000000-);
+}
+
+/* Navbar Button Layout */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hamburger Menu Properties*/
+nav button {
+  cursor: crosshair;
+  margin: -1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 1rem;
+  background: none;
+  border: none;
+  display: flex;
+  color: var(--yellow-fbb03b-);
+  font-size: 2rem;
+}
+
+/* Hamburger Menu Settings - Mobile */
+@media(max-width: 39.9375em) {
+  nav ul {
+    box-shadow: 0 0.16rem 0 0 var(--white-ffffff-);
+    display: none;
+    background: var(--black-000000-);
+    text-align: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+
+  #First_Hamburger_Item {
+    padding-top: 1rem;
+  }
+
+  #Last_Hamburger_Item {
+    padding-bottom: 1rem;
+  }
+}
+
+/* Hamburger Menu Settings - Desktop */
+@media(min-width: 40em) {
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Remove text decoration for the Navbar buttons and adds colors & fonts. */
+nav ul li a {
+  text-decoration: none;
+  color: var(--yellow-fbb03b-);
+}
+
+/* CSS for the sitemap image. */
+.Sitemap {
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* Start of header image defaults.*/
+#main {
+  min-height: 100vh;
+  background: url(../assets/main_background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-ffffff-);
+  padding: 2rem;
+}
+
+#coal {
+  min-height: 100vh;
+  background: url(../assets/coal_background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-ffffff-);
+  padding: 2rem;
+}
+
+#wind {
+  min-height: 100vh;
+  background: url(../assets/wind_background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-ffffff-);
+  padding: 2rem;
+}
+
+#energy {
+  min-height: 100vh;
+  background: url(../assets/electricity_background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-ffffff-);
+  padding: 2rem;
+}
+
+#credits {
+  min-height: 100vh;
+  background: url(../assets/credits_background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-ffffff-);
+  padding: 2rem;
+}
+/* End of header image defaults.*/
+
+/* Top-header text properties.*/
+header h1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20rem;
+  margin-top: 0;
+  text-align: center;
+  font-style: var(--unnamed-font-style-italic);
+  padding-top: 6rem;
+}
+
+/* Bottom-header text properties.*/
+header h2 {
+  padding-top: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 35rem;
+}
+
+/* Start of Video Defaults*/
+
+/* The highest in the heiarchy of divs is used to change the size of the div wrapping the video, and the video itself. */
+div {
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+/* Wrapper for iframe, as a div. */
+div div {
+  position: relative;
+  padding-bottom: 56.25%; /* This is a 16 by 9 aspect ratio: 100 / (16/9) = 56.25% */
+  height: 0;
+  overflow: hidden;
+}
+
+/* Properties for iframe to expand the space of the first div. */
+div div iframe {
+  top: 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  height: 100%;
+}
+
+/* End of Video Defaults*/
+
+/* Start of Main Page Materials*/
+
+/* Properties for the image-clickables, and their formation to flexbox. */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5rem;
+  list-style-type: none;
+  padding: 4rem;
+  margin: 0;
+  justify-content: center;
+}
+
+/* Makes the image-clickables responsive on mobile. */
+ul li {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+
+/* Properties for the text over the image-clickables. */
+ul li h1 {
+  position: absolute;
+  z-index: 4;
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 45%;
+  bottom: 45%;
+  width: 100%;
+  max-width: 25rem;
+  color: var(--yellow-fbb03b-);
+}
+
+/* Properties for the image-clickables to make them be expandable. */
+ul li img {
+  width: 100%;
+  max-width: 30rem;
+}
+
+/* End of Main Page Materials */
+
+/* Start of Coal Materials */
+article {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 70rem;
+  padding-top: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Color & text for the article. */
+article p {
+  color: var(--yellow-fbb03b-);
+}
+
+/* Properties to create the accordian. */
+
+summary {
+  cursor: crosshair;
+  background-color: var(--yellow-fbb03b-);
+  color: var(--black-000000-);
+  padding: 1rem;
+}
+
+details {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: var(--yellow-fbb03b-);
+}
+
+/* End of Coal Materials */
+
+/* Start of Electricity Materials */
+
+/* CSS property for image subtitle. */
+figcaption {
+  color: var(--white-ffffff-);
+}
+
+/* Properties to center the grid. */
+span {
+  max-width: 100%;
+  padding-top: 2rem;
+}
+
+/* Base grid properties. */
+span span{
+  display: grid;
+  grid-template-columns: fit-content(6);
+  grid-template-rows: fit-content(4);
+  grid-gap: 1rem;
+}
+
+/* Media inquiry to simpify the formation of the grid on mobile. */
+@media (max-width: 650px) {
+  span span {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+/* Layout of images in grid formations.*/
+.image1 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.image2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.image3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.image4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.image5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* End of Electricity Materials */
+
+/* The footer. */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -0.16rem 0 0 var(--white-ffffff-);
+  padding: 1rem;
+  width: 100%;
+  color: var(--yellow-fbb03b-);
+  background-color: var(--black-000000-);
 }

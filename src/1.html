@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="js/pw.js"></script>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,16 +8,192 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
-    <title>1</title>
+    <title>Powering A Nation | Debating Coal’s Future</title>
   </head>
   <body>
+
+    <!-- The navbar. -->
     <nav>
-      <a href="./index.html">Home</a>
+      <a href="./index.html"><img src="./assets/logo.png" alt="Home" style="max-width: 12rem"></a>
+      <button>
+        ≡
+      </button>
       <ul>
-        <li><a href="./1.html">1</a></li>
-        <li><a href="./2.html">2</a></li>
-        <li><a href="./3.html">3</a></li>
+        <li id="First_Hamburger_Item"><a href="./1.html">Coal</a></li>
+        <li><a href="./2.html">Electric</a></li>
+        <li><a href="./3.html">Wind</a></li>
+        <li id="Last_Hamburger_Item"><a href="./4.html">Credits</a></li>
       </ul>
     </nav>
+
+    <!-- The header image & text. -->
+    <header id="coal">
+      <h1>
+        Debating Coal’s Future
+      </h1>
+      <h2>
+        The residents of Meigs County, Ohio, live 
+        beneath the towering smokestacks of four 
+        coal-fired power plants. A fifth plant has 
+        been proposed, the latest salvo in a battle 
+        over the way the U.S. gets electricity.
+      </h2>
+    </header>
+
+    <!-- The video, and the two divs that wrap and change it's viewing size. -->
+    <div>
+      <div>
+      <iframe src="https://player.vimeo.com/video/7645302?h=34f1a7ecb5" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <!-- The sitemap. -->
+    <img src="./assets/coal_sitemap.png" alt="Coal Sitemap." class="Sitemap">
+
+    <!-- The article, with details / summary sections to create accordians. -->
+    <article>
+    <p>
+      Since 2001, U.S. energy companies have proposed more than 150 new coal plants. But a 
+      loose network of environmental activists, aided by uncertain economic conditions, has 
+      forced plans for more than 100 of the plants to be abandoned. Dozens more are clogged 
+      up in the court systems.<br><br>One such coal fight is unfolding in Meigs County, Ohio, which 
+      is already surrounded by four coal-fired power plants. <a hfref="https://www.amppartners.org/">American Municipal Power</a> has 
+      proposed building a new Meigs County coal plant, slated to begin construction late this 
+      year or in early 2010.<br><br>The following information provides background to explain why coal 
+      plants are at the center of a national debate over energy production and consumption.
+    </p>
+
+    <details>
+      <summary>
+        What’s the connection between coal and electricity? 
+      </summary>
+      <br>Nearly 50 percent of U.S. electricity <a hfref="http://www.eia.doe.gov/basics/quickelectric.html">comes from coal</a>. Coal-fired power plants burn coal 
+      to generate steam, which is used to turn the turbines of an electrical generator.<br><br>
+      The U.S. has one of the largest coal reserves in the world and burns it at about <a href="http://www.ucsusa.org/clean_energy/coalvswind/c01.html">600 plants</a> 
+      across the nation. Generating electricity from coal is common in the <a href = "http://www.npr.org/news/graphics/2009/apr/electric-grid/">South and in the 
+      heartland</a>, but less often used in regions such as the West Coast, where hydroelectricity 
+      and natural gas are bigger sources of power. 
+    </details>
+
+    <details>
+      <summary>
+        If coal is so important to electricity generation, why are some people concerned about building new coal-fired power plants?  
+      </summary>
+      <br>Coal plants <a href="http://www.epa.gov/climatechange/emissions/co2_human.html">emit carbon dioxide</a>, a major ingredient in climate change.<br><br>
+      In recent years, NASA climate scientist <a href="http://topics.nytimes.com/top/reference/timestopics/people/h/james_e_hansen/index.html?scp=1-spot&sq=james%20hansen&st=cse">James Hansen</a> has advocated a moratorium on 
+      building new coal plants until technology is developed to prevent the carbon dioxide 
+      from escaping into the atmosphere.<br><br>Hansen has <a href="http://www.alternet.org/environment/50795">warned</a> that continuing to release
+      carbon dioxide at current rates – even just for the next 10 years – will create “a 
+      different planet – one without sea ice in the Arctic; with worldwide, repeated coastal 
+      tragedies associated with storms and a continuously rising sea level.”<br><br>
+      The proposed American Municipal Power plant in Meigs County would release an estimated 
+      5.5 million tons of carbon dioxide annually, according to CARMA, a nonprofit group. 
+    </details>
+
+    <details>
+      <summary>
+        Why are there so many electricity-generating coal plants near Meigs County? 
+      </summary>
+      <br>Nearly 50 percent of U.S. electricity <a hfref="http://www.eia.doe.gov/basics/quickelectric.html">comes from coal</a>. Coal-fired power plants burn coal 
+      to generate steam, which is used to turn the turbines of an electrical generator.<br><br>
+      The U.S. has one of the largest coal reserves in the world and burns it at about <a href="http://www.ucsusa.org/clean_energy/coalvswind/c01.html">600 plants</a> 
+      across the nation. Generating electricity from coal is common in the <a href = "http://www.npr.org/news/graphics/2009/apr/electric-grid/">South and in the 
+      heartland</a>, but less often used in regions such as the West Coast, where hydroelectricity 
+      and natural gas are bigger sources of power. 
+    </details>
+
+    <details>
+      <summary>
+        Why are there so many electricity-generating coal plants near Meigs County?
+      </summary>
+      <br>Coal has been a dominant industry for most of the region’s history. The county’s <a href="http://www.mydailysentinel.com/pages/full_story?article-Meigs-County-producing-coal-once-again%20=&page_label=home_top_stories_news&id=1958151-Meigs-County-producing-coal-once-again&widget=push&instance=secondary_news_left_column&open=&">newest 
+      mine began producing coal</a> last February.<br><br>An experimental site for carbon capture and 
+      sequestration, a technology to store carbon dioxide underground, is under construction 
+      in West Virginia near Meigs County's southern border. In addition, <a href="http://www.bizjournals.com/columbus/othercities/cincinnati/stories/2007/05/21/story7.html">a coal-to-liquids 
+      facility and two other coal-fired power plants</a> have been proposed for the region, although 
+      at least some of those plans appear to be on hold.<br><br>Meanwhile, Meigs County is one of the 
+      poorest counties in Ohio, according to 2000 U.S. Census data. Elisa Young, a Meigs County 
+      resident who has organized opposition to the new plant, argues that poverty reduces local 
+      opposition to the coal industry.<br><br>“When you have an economy that's entirely wrapped around coal, 
+      you can't speak out about it,” she says.
+    </details>
+
+    <details>
+      <summary>
+        Some Meigs County residents are concerned about the health effects of coal plants. Why?
+      </summary>
+      <br>In 2007, the four existing coal plants near Meigs County released millions of pounds of 
+      toxic chemicals, including arsenic, chromium, manganese, mercury, sulfuric acid aerosols 
+      and selenium, according to the Environmental Protection Agency.<br><br>Each of these chemicals 
+      has been linked to human health problems, such as cancer, gastrointestinal disorders, impaired 
+      motor skills and neurological damage.<br><br>Kent Carson, a spokesperson for American Municipal Power, said the proposed plant will 
+      use new technology to control pollutants.<br><br>“This will be the cleanest facility of its type in the state,” he said
+    </details>
+
+    <details>
+      <summary>
+        Can it be proved that the coal plants are responsible for health problems in Meigs County?
+      </summary>
+      <br>It can be hard to prove that any one of the chemicals caused health problems of a 
+      particular individual.<br><br>“We’re exposed to a soup of chemicals,” said Kevin Crist, 
+      director of the Center for Air Quality at Ohio University. Crist said health problems 
+      can be influenced by interactions between chemicals, as well as by lifestyle factors.<br><br>
+      In addition, low income – a common characteristic in Meigs County – is correlated with 
+      health problems. One reason is that poor people are more likely to smoke than their 
+      wealthier counterparts. More than <a href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1779290">30 percent of adult residents</a> of Southeast Ohio smoke, 
+      compared to only about 25 percent of residents of other Ohio counties.<br><br>Crist said tall 
+      smokestacks on the existing plants probably disperse most pollutants away from Meigs County. 
+      But he said it is impossible to know for sure what residents are being exposed to, because 
+      no agency monitors the county’s air.
+    </details>
+
+    <details>
+      <summary>
+        So what do we know about air quality and health in Meigs County?
+      </summary>
+      <br>An <a href="http://content.usatoday.com/news/nation/environment/smokestack/index">analysis by USA Today</a> estimated that the air quality at Southern Elementary School 
+      in Meigs County is worse than the air quality at 97 percent of the nation's schools. USA 
+      Today identified two of the coal plants near Meigs County as major contributors to 
+      pollution at the school.<br><br>In addition, men in Meigs County have the lowest life expectancy 
+      among men in any Ohio county, <a href="http://dx.doi.org/10.1371/journal.pmed.0030260.sd001"></a>according to data compiled by <a href="http://medicine.plosjournals.org/archive/1549-1676/3/9/pdf/10.1371_journal.pmed.0030260-S.pdf">Harvard University</a> (women ranked 26th 
+      worst of 88 counties).<br><br>Meigs County also has the highest death rate of any Ohio county for 
+      lung and bronchus cancer, according to the <a href="http://www.cancer.org/downloads/COM/OhioFF2008.pdf">Ohio Department of Health</a>.
+    </details>
+
+    <details>
+      <summary>
+        Despite the suspected health effects, wouldn’t a new plant create much-needed jobs?
+      </summary>
+      <br>Blue-collar labor is especially important in Meigs County, where fewer than 5 percent of 
+      adult residents hold college degrees and more than 25 percent have no high school 
+      diploma, according to the Ohio Office of Policy, Research and Strategic Planning. In 
+      2007, Meigs County's median income was $27,287, about half the national average.<br><br>
+      Many Meigs County residents support the new plant for the jobs it may bring to the 
+      community. Construction worker Greg Sheets has testified in favor of the plant at public 
+      hearings.<br><br>“My family will benefit by me going up there and working,” he said. “If I reached in your 
+      pocket and took $200,000 out of your pocket, would you like it?” he said, referring to the 
+      income he estimated he could earn during the four years it would take to build the plant.<br><br> 
+      But no one can guarantee how many jobs will actually go to Meigs County residents or 
+      how much they will pay.<br><br>“We all know that not all the workers are going to come from 
+      Meigs County,” said Sheets, the construction worker. “They’ll be from all over the country.” 
+    </details>
+
+    <details>
+      <summary>
+        What’s next?
+      </summary>
+      <br>Before construction can begin on a new coal plant, an energy company must receive 
+      pollution permits from a state regulatory authority.<br><br>Carson, the American Municipal Power 
+      spokesman, said his utility has received all the permits it needs and that construction on 
+      the plant will start in late 2009 or early 2010.<br><br>Opponents of the plant have appealed 
+      the plant’s permits. The state of Ohio will allow construction to proceed during the appeals process. 
+    </details>
+    
+    </article>
+
+    <!-- The footer. -->
+    <footer>
+      Created by Richard H. Perez (MEJO 187)
+    </footer>
   </body>
 </html>
