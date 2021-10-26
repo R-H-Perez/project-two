@@ -1,12 +1,11 @@
-  /* Adobe XD Exports */
+/* Adobe XD Exports */
 :root {
-
   /* Colors: */
-  --white-ffffff-: #FFFFFF;
-  --yellow-fbb03b-: #FBB03B;
-  --grey-cdcdcd-: #CDCDCD;
+  --white-ffffff-: #ffffff;
+  --yellow-fbb03b-: #fbb03b;
+  --grey-cdcdcd-: #cdcdcd;
   --black-000000-: #000000;
-  
+
   /* Font/text values */
   --unnamed-font-family-franklin-gothic: Franklin Gothic;
   --unnamed-font-style-italic: italic;
@@ -24,9 +23,9 @@
   --unnamed-line-spacing-49-5: 49.5px;
   --unnamed-line-spacing-37-5: 37.5px;
 }
-  
+
 * {
-    font-family: var(--unnamed-font-family-franklin-gothic);
+  font-family: var(--unnamed-font-family-franklin-gothic);
 }
 
 /* Setting to make the entire page black. */
@@ -35,7 +34,7 @@ body {
   background-color: var(--black-000000-);
 }
 
-/* Navbar */
+/* Start of Navbar CSS.*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -75,7 +74,7 @@ nav button {
 }
 
 /* Hamburger Menu Settings - Mobile */
-@media(max-width: 39.9375em) {
+@media (max-width: 39.9375em) {
   nav ul {
     box-shadow: 0 0.16rem 0 0 var(--white-ffffff-);
     display: none;
@@ -88,7 +87,7 @@ nav button {
     top: 100%;
     left: 0;
   }
-  
+
   nav ul.active {
     display: flex;
   }
@@ -103,7 +102,7 @@ nav button {
 }
 
 /* Hamburger Menu Settings - Desktop */
-@media(min-width: 40em) {
+@media (min-width: 40em) {
   nav button {
     display: none;
   }
@@ -128,6 +127,7 @@ nav ul li a {
   width: 100%;
   max-width: 40rem;
 }
+/* End of Navbar CSS.*/
 
 /* Start of header image defaults.*/
 #main {
@@ -176,6 +176,7 @@ nav ul li a {
 }
 /* End of header image defaults.*/
 
+/* Start of header images' text defaults.*/
 /* Top-header text properties.*/
 header h1 {
   margin: 0 auto;
@@ -194,9 +195,9 @@ header h2 {
   width: 100%;
   max-width: 35rem;
 }
+/* End of header images' text defaults.*/
 
 /* Start of Video Defaults*/
-
 /* The highest in the heiarchy of divs is used to change the size of the div wrapping the video, and the video itself. */
 div {
   margin: 0 auto;
@@ -228,7 +229,6 @@ div div iframe {
 /* End of Video Defaults*/
 
 /* Start of Main Page Materials*/
-
 /* Properties for the image-clickables, and their formation to flexbox. */
 ul {
   display: flex;
@@ -268,7 +268,6 @@ ul li img {
   width: 100%;
   max-width: 30rem;
 }
-
 /* End of Main Page Materials */
 
 /* Start of Coal Materials */
@@ -301,11 +300,9 @@ details {
   padding: 0.5rem;
   color: var(--yellow-fbb03b-);
 }
-
 /* End of Coal Materials */
 
 /* Start of Electricity Materials */
-
 /* CSS property for image subtitle. */
 figcaption {
   color: var(--white-ffffff-);
@@ -318,7 +315,7 @@ span {
 }
 
 /* Base grid properties. */
-span span{
+span span {
   display: grid;
   grid-template-columns: fit-content(6);
   grid-template-rows: fit-content(4);
@@ -369,7 +366,6 @@ span span{
   grid-row-start: 3;
   grid-row-end: 4;
 }
-
 /* End of Electricity Materials */
 
 /* The footer. */
