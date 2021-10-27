@@ -25,102 +25,6 @@
   --unnamed-line-spacing-37-5: 37.5px;
 }
 
-/* Character Styles */
-.m-main-menu-buttons {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-34);
-  line-height: var(--unnamed-line-spacing-51);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--yellow-fbb03b-);
-}
-.m-title-heading {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-italic);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-33);
-  line-height: var(--unnamed-line-spacing-49-5);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--white-ffffff-);
-}
-.m-title-paragraph {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-25);
-  line-height: var(--unnamed-line-spacing-37-5);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--white-ffffff-);
-}
-.m-accordian-text {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-25);
-  line-height: var(--unnamed-line-spacing-37-5);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--black-000000-);
-}
-.m-paragraph-text {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-25);
-  line-height: var(--unnamed-line-spacing-37-5);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--yellow-fbb03b-);
-}
-.d-main-menu-buttons {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-50);
-  line-height: var(--unnamed-line-spacing-75);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--yellow-fbb03b-);
-}
-.d-title-heading {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-italic);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-50);
-  line-height: var(--unnamed-line-spacing-75);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--white-ffffff-);
-}
-.d-title-paragraph {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-30);
-  line-height: var(--unnamed-line-spacing-45);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--white-ffffff-);
-}
-.d-accordian-text {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-30);
-  line-height: var(--unnamed-line-spacing-45);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--black-000000-);
-}
-.d-paragraph-navbar-text {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
-  font-size: var(--unnamed-font-size-30);
-  line-height: var(--unnamed-line-spacing-45);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--yellow-fbb03b-);
-}
-
-* {
-  font-family: var(--unnamed-font-family-franklin-gothic);
-}
-
 /* Setting to make the entire page black. */
 body {
   margin: 0;
@@ -149,6 +53,12 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: 1.2rem;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--yellow-fbb03b-);
 }
 
 /* Hamburger Menu Properties*/
@@ -274,12 +184,31 @@ nav ul li a {
 header h1 {
   margin: 0 auto;
   width: 100%;
-  max-width: 20rem;
+  max-width: 35rem;
   margin-top: 0;
   text-align: center;
-  font-style: var(--unnamed-font-style-italic);
   padding-top: 6rem;
   text-shadow: #000000 0.1rem 0 1rem, #000000 0.1rem 0 1rem;
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-italic);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-50);
+  line-height: var(--unnamed-line-spacing-75);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white-ffffff-);
+}
+
+@media (max-width: 650px) {
+  header h1 {
+    max-width: 22rem;
+    font-family: var(--unnamed-font-family-franklin-gothic);
+    font-style: var(--unnamed-font-style-italic);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-33);
+    line-height: var(--unnamed-line-spacing-49-5);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--white-ffffff-);
+  }
 }
 
 /* Bottom-header text properties.*/
@@ -287,9 +216,30 @@ header h2 {
   padding-top: 2rem;
   margin: 0 auto;
   width: 100%;
-  max-width: 35rem;
+  max-width: 42rem;
   text-shadow: #000000 0.1rem 0 1rem, #000000 0.1rem 0 1rem;
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white-ffffff-);
 }
+
+@media (max-width: 650px) {
+  header h2 {
+    max-width: 23rem;
+    font-family: var(--unnamed-font-family-franklin-gothic);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-25);
+    line-height: var(--unnamed-line-spacing-37-5);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--white-ffffff-);
+  }
+}
+
 /* End of header images' text defaults.*/
 
 /* Start of Video Defaults*/
@@ -351,11 +301,29 @@ ul li h1 {
   text-align: center;
   left: 0;
   right: 0;
-  top: 45%;
-  bottom: 45%;
+  top: 40%;
+  bottom: 50%;
   width: 100%;
   max-width: 25rem;
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-50);
+  line-height: var(--unnamed-line-spacing-75);
+  letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--yellow-fbb03b-);
+}
+
+@media (max-width: 650px) {
+  ul li h1 {
+    font-family: var(--unnamed-font-family-franklin-gothic);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-34);
+    line-height: var(--unnamed-line-spacing-51);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--yellow-fbb03b-);
+  }
 }
 
 /* Properties for the image-clickables to make them be expandable. */
@@ -369,7 +337,7 @@ ul li img {
 article {
   margin: 0 auto;
   width: 100%;
-  max-width: 70rem;
+  max-width: 67rem;
   padding-top: 0;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -378,28 +346,70 @@ article {
 
 /* Color & text for the article. */
 article p {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--yellow-fbb03b-);
 }
 
-/* Properties to create the accordian. */
+@media (max-width: 650px) {
+  article p {
+    font-family: var(--unnamed-font-family-franklin-gothic);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-25);
+    line-height: var(--unnamed-line-spacing-37-5);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--yellow-fbb03b-);
+  }
+}
+
+/* Properties to create and properly format the accordian. */
 
 summary {
   cursor: crosshair;
   background-color: var(--dark-grey-2a2727);
   color: var(--white-ffffff-);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 details {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--yellow-fbb03b-);
+}
+
+@media (max-width: 650px) {
+  details {
+    font-family: var(--unnamed-font-family-franklin-gothic);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-25);
+    line-height: var(--unnamed-line-spacing-37-5);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--yellow-fbb03b-);
+  }
 }
 /* End of Coal Materials */
 
 /* Start of Electricity Materials */
 /* CSS property for image subtitle. */
 figcaption {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-italic);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: 1.2rem; /* 19.2px */
+  line-height: 1.8rem; /* 19.2px * 1.5 */
+  letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white-ffffff-);
 }
 
@@ -471,6 +481,24 @@ footer {
   box-shadow: 0 -0.16rem 0 0 var(--white-ffffff-);
   padding: 1rem;
   width: 100%;
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--yellow-fbb03b-);
   background-color: var(--black-000000-);
+}
+
+@media (max-width: 650px) {
+  footer {
+    font-family: var(--unnamed-font-family-franklin-gothic);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-25);
+    line-height: var(--unnamed-line-spacing-37-5);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--yellow-fbb03b-);
+  }
 }
