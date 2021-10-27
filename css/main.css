@@ -5,6 +5,7 @@
   --yellow-fbb03b-: #fbb03b;
   --grey-cdcdcd-: #cdcdcd;
   --black-000000-: #000000;
+  --dark-grey-2a2727: #2a2727;
 
   /* Font/text values */
   --unnamed-font-family-franklin-gothic: Franklin Gothic;
@@ -22,6 +23,98 @@
   --unnamed-line-spacing-75: 75px;
   --unnamed-line-spacing-49-5: 49.5px;
   --unnamed-line-spacing-37-5: 37.5px;
+}
+
+/* Character Styles */
+.m-main-menu-buttons {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-34);
+  line-height: var(--unnamed-line-spacing-51);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--yellow-fbb03b-);
+}
+.m-title-heading {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-italic);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-33);
+  line-height: var(--unnamed-line-spacing-49-5);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white-ffffff-);
+}
+.m-title-paragraph {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-25);
+  line-height: var(--unnamed-line-spacing-37-5);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white-ffffff-);
+}
+.m-accordian-text {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-25);
+  line-height: var(--unnamed-line-spacing-37-5);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--black-000000-);
+}
+.m-paragraph-text {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-25);
+  line-height: var(--unnamed-line-spacing-37-5);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--yellow-fbb03b-);
+}
+.d-main-menu-buttons {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-50);
+  line-height: var(--unnamed-line-spacing-75);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--yellow-fbb03b-);
+}
+.d-title-heading {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-italic);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-50);
+  line-height: var(--unnamed-line-spacing-75);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white-ffffff-);
+}
+.d-title-paragraph {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--white-ffffff-);
+}
+.d-accordian-text {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--black-000000-);
+}
+.d-paragraph-navbar-text {
+  font-family: var(--unnamed-font-family-franklin-gothic);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-45);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--yellow-fbb03b-);
 }
 
 * {
@@ -290,8 +383,8 @@ article p {
 
 summary {
   cursor: crosshair;
-  background-color: var(--yellow-fbb03b-);
-  color: var(--black-000000-);
+  background-color: var(--dark-grey-2a2727);
+  color: var(--white-ffffff-);
   padding: 1rem;
 }
 
