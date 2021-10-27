@@ -12,17 +12,17 @@
   --unnamed-font-style-italic: italic;
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-medium: medium;
-  --unnamed-font-size-25: 25px;
-  --unnamed-font-size-30: 30px;
-  --unnamed-font-size-33: 33px;
-  --unnamed-font-size-34: 34px;
-  --unnamed-font-size-50: 50px;
-  --unnamed-character-spacing-0: 0px;
-  --unnamed-line-spacing-45: 45px;
-  --unnamed-line-spacing-51: 51px;
-  --unnamed-line-spacing-75: 75px;
-  --unnamed-line-spacing-49-5: 49.5px;
-  --unnamed-line-spacing-37-5: 37.5px;
+  --unnamed-font-size-25: 1.5625rem;
+  --unnamed-font-size-30: 1.875rem;
+  --unnamed-font-size-33: 2.0625rem;
+  --unnamed-font-size-34: 2.125rem;
+  --unnamed-font-size-50: 3.125rem;
+  --unnamed-character-spacing-0: 0rem;
+  --unnamed-line-spacing-45: 2.8125rem;
+  --unnamed-line-spacing-51: 3.1875rem;
+  --unnamed-line-spacing-75: 4.6875rem;
+  --unnamed-line-spacing-49-5: 3.09375rem;
+  --unnamed-line-spacing-37-5: 2.34375rem;
 }
 
 /* Setting to make the entire page black. */
@@ -198,7 +198,7 @@ header h1 {
   color: var(--white-ffffff-);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   header h1 {
     max-width: 22rem;
     font-family: var(--unnamed-font-family-franklin-gothic);
@@ -227,7 +227,7 @@ header h2 {
   color: var(--white-ffffff-);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   header h2 {
     max-width: 23rem;
     font-family: var(--unnamed-font-family-franklin-gothic);
@@ -314,7 +314,7 @@ ul li h1 {
   color: var(--yellow-fbb03b-);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   ul li h1 {
     font-family: var(--unnamed-font-family-franklin-gothic);
     font-style: var(--unnamed-font-style-normal);
@@ -355,7 +355,7 @@ article p {
   color: var(--yellow-fbb03b-);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   article p {
     font-family: var(--unnamed-font-family-franklin-gothic);
     font-style: var(--unnamed-font-style-normal);
@@ -388,7 +388,7 @@ details {
   color: var(--yellow-fbb03b-);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   details {
     font-family: var(--unnamed-font-family-franklin-gothic);
     font-style: var(--unnamed-font-style-normal);
@@ -428,7 +428,7 @@ span span {
 }
 
 /* Media inquiry to simpify the formation of the grid on mobile. */
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   span span {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -491,7 +491,7 @@ footer {
   background-color: var(--black-000000-);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 39.9375em) {
   footer {
     font-family: var(--unnamed-font-family-franklin-gothic);
     font-style: var(--unnamed-font-style-normal);
