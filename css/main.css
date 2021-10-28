@@ -373,7 +373,8 @@ summary {
   cursor: crosshair;
   background-color: var(--dark-grey-2a2727);
   color: var(--white-ffffff-);
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 details {
