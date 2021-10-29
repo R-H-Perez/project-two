@@ -24,6 +24,15 @@
   --unnamed-line-spacing-49-5: 3.09375rem;
   --unnamed-line-spacing-37-5: 2.34375rem;
 }
+@font-face {
+  font-family: Franklin Gothic;
+  src: url("../fonts/eot.eot");
+  src: url("../fonts/eot.eot#iefix") format("embedded-opentype"),
+    url("../fonts/woff2.woff2") format("woff2"),
+    url("../fonts/woff.woff") format("woff"),
+    url("../fonts/ttf.ttf") format("truetype"),
+    url("../fonts/svg.svg#Franklin Gothic Medium V2") format("svg");
+}
 
 /* Setting to make the entire page black. */
 body {
